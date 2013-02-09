@@ -6,5 +6,5 @@ n^2, n squared	The lower bound on the number of operations required to sort n nu
 2^j	The number of sub-problems, if n numbers are subjected to j recursive sub-divisions
 n/2^j	The size of each sub-problem, if n numbers are subjected to j recursive sub-divisions	
 O(f(n))	In general, given a function T(n) and some simplified function f(n), then if the highest term of T(n) is less than or equal to the highest term of f(n), T(n) is 
-Ω(f(n)), omega(f(n))	In general, given a function T(n) and some simplified function f(n), then if the highest term of T(n) is grater than or equal to the highest term of f(n), T(n) is 
+Ω(f(n)), omega(f(n))	In general, given a function T(n) and some simplified function f(n), then if the highest term of T(n) is greater than or equal to the highest term of f(n), T(n) is 
 Θ(f(n)), theta(f(n))	In general, given a function T(n) and some simplified function f(n), then if the highest term of T(n) is equal to the highest term of f(n), T(n) is 
