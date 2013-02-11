@@ -1,20 +1,20 @@
 WEEK 1	Introduction
-Self-Interested agent	some entity that has preferences and acts on them
-Game	a strategic interaction between self-interested agents
-Player	a self-interested agent that acts in a game
-actions	defined moves that a player can make in a game
-payoffs	the possible outcomes in a game for each of the players
-Utility function, Payoff function	a formal description of the preferences of a self-interested agent
-Normal Form, Matrix Form, Strategic Form	representation of payoffs expressed as a function of player actions, assuming that each player acts simultaneously
-Action set	a description of all actions that a single player can make in a game
-Strategy	a particular given choice of actions made by a player
-Action profile, Strategy profile	a particular given choice of strategies by all players in a game
+Self-Interested agent	Some entity that has preferences and acts on them
+Game	A strategic interaction between self-interested agents
+Player	A self-interested agent that acts in a game
+Actions	Defined moves that a player can make in a game
+Payoffs	The possible outcomes in a game for each of the players
+Utility function, Payoff function	A formal description of the preferences of a self-interested agent
+Normal Form, Matrix Form, Strategic Form	Representation of payoffs expressed as a function of player actions, assuming that each player acts simultaneously
+Action set	A description of all actions that a single player can make in a game
+Strategy	A particular given choice of actions made by a player
+Action profile, Strategy profile	A particular given choice of strategies by all players in a game
 Payoff profile	The payoffs of all players given the strategy profile of a game
-Best response	given the strategies of all other players, a strategy that offers a player a utility at least as good as any other strategy.
+Best response	Given the strategies of all other players, a strategy that offers a player a utility at least as good as any other strategy.
 Nash equilibrium, NE	 a Strategy Profile where for all agents, every player is playing one of their Best Responses
-strictly dominates	The relationship of one strategy to another, where one strategy provides a player with a better payoff than the other strategy regardless of what the other players do
-very weakly dominates	The relationship of one strategy to another, where one strategy provides a player with a payoff at least as good as the other strategy regardless of what the other players do
-dominant	a strategy that provides a player with a payoff at least as good as any other available strategy regardless of what the other players do
+Strictly dominates	The relationship of one strategy to another, where one strategy provides a player with a better payoff than the other strategy regardless of what the other players do
+Very weakly dominates	The relationship of one strategy to another, where one strategy provides a player with a payoff at least as good as the other strategy regardless of what the other players do
+Dominant	A strategy that provides a player with a payoff at least as good as any other available strategy regardless of what the other players do
 Nash equilibrium, NE	The definition of a strategy profile that consists entirely of dominant strategies
 unique, uniqueness	An attribute of a strategy profile of strictly dominant strategies
 Pareto dominates	The relationship of one outcome to another, where at least one player strictly prefers one outcome and all the other players very weakly prefer it
@@ -22,30 +22,30 @@ Pareto optimum	An outcome where for all players there is no other outcome that i
 both defect	In prisoner's dilemma, what is the Nash equilibrium strategy for both players
 both defect	In prisoner's dilemma, what is the only strategy for both players that is not Pareto optimal
 WEEK 2	Mixed strategies
-Pure	a predictable strategy with no random element
-Mixed	a strategy that is a set of pure strategies applied randomly, each with some positive probality
+Pure	A predictable strategy with no random element
+Mixed	A strategy that is a set of pure strategies applied randomly, each with some positive probality
 Nash equilibrium, NE	What every finite game has.
-support	A general term for the set of pure strategies that make up a mixed strategy
+Support	A general term for the set of pure strategies that make up a mixed strategy
 Nash equilibrium, NE	A point where all players are indifferent to how they play, given the probability distributions of the other players' supports
 equal	In a mixed strategy equilibrium, a player's payoffs are all...
 unchanged	If a player's payoffs change, then at the new Nash equilibria their own probability distribution will be...
 changed	If a player's payoffs change, then at the new Nash equilibria other player's probability distributions will be...
 go down	If one player's payoff goes up for a particular outcome, then at the Nash equilibrium the probability of another player taking an action that might lead to that outcome will, in general...
-preprocessing step	Iterated removal of strictly dominated strategies applied before computing equilibrium is an example of a
+Preprocessing step	Iterated removal of strictly dominated strategies applied before computing equilibrium is an example of a
 removed	A pure strategy that is strictly dominated by a different pure strategy can be
 removed	A pure strategy that is strictly dominated by any other mixed strategy can be
-dominance solvable	A game that can be solved using iterated removal of strictly dominated strategies
+Dominance solvable	A game that can be solved using iterated removal of strictly dominated strategies
 does not matter	Order of removal of strictly dominated strategies
 Maxmin	A strategy that maximises the value of a worst-case payoff
-Maxmin value, Safety value	the minimum payoff guaranteed by a maxmin strategy
+Maxmin value, Safety value	The minimum payoff guaranteed by a maxmin strategy
 Minmax	A strategy that minimises the other players' best-case payoff  
 Minmax value	The maximum payoff for a player when other players are playing minmax strategies
-zero-sum	In what sort of game does a mimax strategy make sense
-Correlated equilibrium	an outcome that is arrived at through some form of public signal that exceeds any Nash equilibrium
+Zero-sum	In what sort of game does a mimax strategy make sense
+Correlated equilibrium	An outcome that is arrived at through some form of public signal that exceeds any Nash equilibrium
 WEEK 4	Extensive form
-Extensive form	representation of payoffs expressed as a function of player actions, assuming that each player acts sequentially
-Perfect information	where a player knows everything about the strategies of other players in a game 
-Imperfect information	where a player does not know everything about the strategies of other players in a game 
+Extensive form	Representation of payoffs expressed as a function of player actions, assuming that each player acts sequentially
+Perfect information	Where a player knows everything about the strategies of other players in a game 
+Imperfect information	Where a player does not know everything about the strategies of other players in a game 
 Game tree	In an extensive-form game, a representation of sequential actions in a game
 Choice nodes	In an extensive-form game, the set of points in a game tree where a player can make non-terminal choice
 Terminal nodes, leaf nodes	In an extensive-form game, the set of points in a game tree where players can make a choice that ends the game
@@ -67,8 +67,8 @@ equal	In a perfect information extensive-form game, the outcome of a mixed and a
 Perfect recall	In an  imperfect information extensive-form game, the outcome of a mixed and a behavioural strategy are both equal in the case where the game has...
 Proper subgames	In an imperfect information extensive-form game, there may not be many...
 WEEK 5	REPEATED GAMES
-repeated game	A game that is played more than once
-stochastic game	A generalisation of a repeated game where at any point the game may change
+Repeated game	A game that is played more than once
+Stochastic game	A generalisation of a repeated game where at any point the game may change
 Markov Decision Process, MDP	A single-agent stochastic game with a finite set of states and actions, a set of probabilities of an action leading from one state to another, and a set of expected rewards for each transition
 Average reward	In a repeated game, a player's total aggregate payoff divided by the number of repetitions of the game
 Discount factor	In a repeated game, the rate at which the value to a player of successive payoffs is sustained, due to uncertainty about when the game might finish or other factors
@@ -80,17 +80,53 @@ No-regret	A learning rule that when applied by an agent, tends over time to a re
 Regret matching	A learning rule where a player plays a pure strategy with a probability that is in inverse proportion to the regret that that strategy has caused in the past
 Correlated equilibrium	For a finite game, regret matching converges to a
 Pure	In an infinitely-repeated game, a strategy that uses the same learning rule throughout
-enforceable	A payoff profile that meets the condition that every player is getting a payoff at least as great as their minmax value
-feasible	A payoff profile that meets the condition that each player's payoff can actually be met by some mixed strategy, given the payoffs of their available pure strategies
+Enforceable	A payoff profile that meets the condition that every player is getting a payoff at least as great as their minmax value
+Feasible	A payoff profile that meets the condition that each player's payoff can actually be met by some mixed strategy, given the payoffs of their available pure strategies
 Nash equilibrium	Folk theorem: If a payoff profile is both enforceable and feasible, then it is a
 Stage game	In a repeated game, the game which forms the basis of each repetition
 Grim trigger	In a repeated game, a strategy that begins with cooperation but which when met with defection switches thereafter to defection
 Subgame perfect	In a repeated game, repeatedly playing a given Nash equilibrium of a stage game is always...
 Discount factor, Beta	In a repeated game with a correlated equilibrium, the total payoff for cooperation will generally be higher than for defection if there is a sufficiently high...
-power series, geometric series	In a repeated game, the total discounted payoff for playing the same strategy repeatedly is calculated from the sum of a
+Power series, geometric series	In a repeated game, the total discounted payoff for playing the same strategy repeatedly is calculated from the sum of a
 1 - beta	The sum of a simple power series of beta where  0 > beta > 1 is given by the inverse of 
-current	folk theorem: discounted repeated games. M stands for the maximum gain from deviation (given a correlated equilibrium and at least one Nash equilibrium) in which time period(s)?
-subsequent	folk theorem: discounted repeated games. m stands for the minimum loss from deviation (given a correlated equilibrium and at least one Nash equilibrium) in which time period(s)?
-sum	folk theorem: discounted repeated games. The minimum value of beta for a sustainable correlated equilibrium needs to be more than M divided by what function of M and m?
-tit for tat	A strategy where a player co-operates by default, but then if met with defection will in the next game ignore the other player's action and defect before returning to cooperation
-twice	If in a two-player game a player plays tit for tat, this has the effect of making the other player treat it as a game that is repeated
+current	Folk theorem: discounted repeated games. M stands for the maximum gain from deviation (given a correlated equilibrium and at least one Nash equilibrium) in which time period(s)?
+subsequent	Folk theorem: discounted repeated games. m stands for the minimum loss from deviation (given a correlated equilibrium and at least one Nash equilibrium) in which time period(s)?
+sum	Folk theorem: discounted repeated games. The minimum value of beta for a sustainable correlated equilibrium needs to be more than M divided by what function of M and m?
+Tit for tat	A strategy where a player co-operates by default, but then if met with defection will in the next game ignore the other player's action and defect before returning to cooperation
+once	If in a two-player game a player plays tit for tat, this has the effect of making the other player treat it as a game that is repeated
+	COALITIONAL GAME THEORY
+Coalitional, cooperative	A game involving groups of agents acting together
+Transferrable utility	In a coalitional game, the assumption that payoffs can be redistributed between members of a coalition
+Grand coalition	In a coalitional game, the case where all agents act together
+Superadditive	A coalitional game where all possible coalitions that consist of different agents can obtain a better payoff by combining to form a larger coalition 
+Grand coalition	In a superadditive game, the coalition with the highest payoff
+Shapley value	The  marginal contribution that a member makes to a coalition
+Interchangeable	Two agents that make the same contribution to every possible coalition of which they could be a part are
+Symmetry	Shapley axiom: Interchangeable agents should receive similar payments
+Dummy player	Shapley axiom: A player that makes no contribution to any coalition of which they could be a part should receive no payments
+Additivity	Shapley axion: A coalitional game that can be separated into parts, should also be able to decompose payments to coalition partners
+Shapley value	In a grand coalition, the payment to each player that satisfies the Symmetry, Dummy player and Additivity axioms
+Unique	Given a Grand coalition, the Shapley value for each player is
+N!	Given a coalition of N players, the number of distinct sequences by which the coalition could have formed
+Shapley value	The sum of all the possible marginal contributions to the formation of a coalition that a member could have made divided by the total number of those contributions
+Core	A grand coalition for which the sum of payoffs to the agents is at least as much as they could earn on their own or in another coalition
+Core	A coalition game does not always have a nonempty
+Core	A coalition game does not always have a unique
+Simple	A coalitional game where the value of all possible coalitions is either 0 or 1
+Veto player	In a coalition game, a player where the value of all coalitions that don't involve that player is 0
+Veto player	In a Simple game the core is empty if and only if there is no
+Veto players	In a coalitional game, the payoffs in the core are divided exclusively between the
+Convex	A coalitional game where all possible subcoalitions can obtain a better payoff by combining to form a larger coalition, when taking into account the overlapping payoffs of the subcoalitions
+Core	Every convex game has a nonempty
+Core	In every convex game, the Shapley value is in the
+	
+
+
+
+
+
+
+
+
+
+
