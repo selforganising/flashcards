@@ -94,7 +94,7 @@ subsequent	Folk theorem: discounted repeated games. m stands for the minimum los
 sum	Folk theorem: discounted repeated games. The minimum value of beta for a sustainable correlated equilibrium needs to be more than M divided by what function of M and m?
 Tit for tat	A strategy where a player co-operates by default, but then if met with defection will in the next game ignore the other player's action and defect before returning to cooperation
 once	If in a two-player game a player plays tit for tat, this has the effect of making the other player treat it as a game that is repeated
-	COALITIONAL GAME THEORY
+	COALITIONAL GAMES
 Coalitional, cooperative	A game involving groups of agents acting together
 Transferrable utility	In a coalitional game, the assumption that payoffs can be redistributed between members of a coalition
 Grand coalition	In a coalitional game, the case where all agents act together
@@ -113,9 +113,9 @@ Core	A grand coalition for which the sum of payoffs to the agents is at least as
 Core	A coalition game does not always have a nonempty
 Core	A coalition game does not always have a unique
 Simple	A coalitional game where the value of all possible coalitions is either 0 or 1
-Veto player	In a coalition game, a player where the value of all coalitions that don't involve that player is 0
-Veto player	In a Simple game the core is empty if and only if there is no
-Veto players	In a coalitional game, the payoffs in the core are divided exclusively between the
+Veto player	In a coalitional game, a player where the value of all coalitions that don't involve that player is 0
+Veto player	In a Simple coalitional game the core is empty if and only if there is no
+Veto players	In a simple coalitional game, the payoffs in the core are divided exclusively between the
 Convex	A coalitional game where all possible subcoalitions can obtain a better payoff by combining to form a larger coalition, when taking into account the overlapping payoffs of the subcoalitions
 Core	Every convex game has a nonempty
 Core	In every convex game, the Shapley value is in the

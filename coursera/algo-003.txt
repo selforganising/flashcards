@@ -20,6 +20,8 @@ right	In an array of length n, an inversion of numbers at index i,j where i, j >
 split	In an array of length n, an inversion of numbers at index i,j where i ≤ n/2 < j
 n^3, n cubed	The lower bound on the number of operations required to multiply two n × n matrices in the conventional way
 Strassen	The author of an algorithm discovered in 1969 that improves on the lower bound for multiplying two n × n matrices
+	WEEK 2
+
 
 
 
