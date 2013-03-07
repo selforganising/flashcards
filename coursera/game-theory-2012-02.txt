@@ -6,7 +6,7 @@ Actions	Defined moves that a player can make in a game
 Payoffs	The possible outcomes in a game for each of the players
 Utility function, Payoff function	A formal description of the preferences of a self-interested agent
 Normal Form, Matrix Form, Strategic Form	Representation of payoffs expressed as a function of player actions, assuming that each player acts simultaneously
-Action set	A description of all actions that a single player can make in a game
+Action set	A description of actions that a single player can make in a game
 Strategy	A particular given choice of actions made by a player
 Action profile, Strategy profile	A particular given choice of strategies by all players in a game
 Payoff profile	The payoffs of all players given the strategy profile of a game
@@ -21,7 +21,8 @@ Pareto dominates	The relationship of one outcome to another, where at least one 
 Pareto optimum	An outcome where for all players there is no other outcome that is strictly-preferred by at least one player and very weakly-preferred by the others.
 both defect	In prisoner's dilemma, what is the Nash equilibrium strategy for both players
 both defect	In prisoner's dilemma, what is the only strategy for both players that is not Pareto optimal
-WEEK 2	Mixed strategies
+Pure Strategy Nash Equilibrium (PSNE)	Rock-Paper-Scissors does not have a 
+WEEKS 2 and 3	Mixed strategies
 Pure	A predictable strategy with no random element
 Mixed	A strategy that is a set of pure strategies applied randomly, each with some positive probality
 Nash equilibrium, NE	What every finite game has.
@@ -31,6 +32,7 @@ equal	In a mixed strategy equilibrium, a player's payoffs are all...
 unchanged	If a player's payoffs change, then at the new Nash equilibria their own probability distribution will be...
 changed	If a player's payoffs change, then at the new Nash equilibria other player's probability distributions will be...
 go down	If one player's payoff goes up for a particular outcome, then at the Nash equilibrium the probability of another player taking an action that might lead to that outcome will, in general...
+1/3	In Rock-Paper-Scissors, the mixed-strategy equilibrium for all players is where the probability of any action is 
 Preprocessing step	Iterated removal of strictly dominated strategies applied before computing equilibrium is an example of a
 removed	A pure strategy that is strictly dominated by a different pure strategy can be
 removed	A pure strategy that is strictly dominated by any other mixed strategy can be
@@ -47,8 +49,8 @@ Extensive form	Representation of payoffs expressed as a function of player actio
 Perfect information	Where a player knows everything about the strategies of other players in a game 
 Imperfect information	Where a player does not know everything about the strategies of other players in a game 
 Game tree	In an extensive-form game, a representation of sequential actions in a game
-Choice nodes	In an extensive-form game, the set of points in a game tree where a player can make non-terminal choice
-Terminal nodes, leaf nodes	In an extensive-form game, the set of points in a game tree where players can make a choice that ends the game
+Choice nodes	In an extensive-form game, the points in a game tree where a player can make non-terminal choice
+Terminal nodes, leaf nodes	In an extensive-form game, the points in a game tree where players can make a choice that ends the game
 Action function	In an extensive-form game, a formal description of the choices that can be made by a player in a game at any given node
 Player function	In an extensive-form game, a formal description of which players in a game can make a choice at a given node
 Successor function	In an extensive-form game, a formal description of how an action at any given choice node can lead the game to a new node in the game tree
@@ -96,7 +98,7 @@ Tit for tat	A strategy where a player co-operates by default, but then if met wi
 once	If in a two-player game a player plays tit for tat, this has the effect of making the other player treat it as a game that is repeated
 	COALITIONAL GAMES
 Coalitional, cooperative	A game involving groups of agents acting together
-Transferrable utility	In a coalitional game, the assumption that payoffs can be redistributed between members of a coalition
+Transferable utility	In a coalitional game, the assumption that payoffs can be redistributed between members of a coalition
 Grand coalition	In a coalitional game, the case where all agents act together
 Superadditive	A coalitional game where all possible coalitions that consist of different agents can obtain a better payoff by combining to form a larger coalition 
 Grand coalition	In a superadditive game, the coalition with the highest payoff
@@ -104,7 +106,7 @@ Shapley value	The  marginal contribution that a member makes to a coalition
 Interchangeable	Two agents that make the same contribution to every possible coalition of which they could be a part are
 Symmetry	Shapley axiom: Interchangeable agents should receive similar payments
 Dummy player	Shapley axiom: A player that makes no contribution to any coalition of which they could be a part should receive no payments
-Additivity	Shapley axion: A coalitional game that can be separated into parts, should also be able to decompose payments to coalition partners
+Additivity	Shapley axiom: A coalitional game that can be separated into parts, should also be able to decompose payments to coalition partners
 Shapley value	In a grand coalition, the payment to each player that satisfies the Symmetry, Dummy player and Additivity axioms
 Unique	Given a Grand coalition, the Shapley value for each player is
 N!	Given a coalition of N players, the number of distinct sequences by which the coalition could have formed
@@ -114,18 +116,33 @@ Core	A coalition game does not always have a nonempty
 Core	A coalition game does not always have a unique
 Simple	A coalitional game where the value of all possible coalitions is either 0 or 1
 Veto player	In a coalitional game, a player where the value of all coalitions that don't involve that player is 0
-Veto player	In a Simple coalitional game the core is empty if and only if there is no
+Veto player	In a simple coalitional game the core is empty if and only if there is no
 Veto players	In a simple coalitional game, the payoffs in the core are divided exclusively between the
 Convex	A coalitional game where all possible subcoalitions can obtain a better payoff by combining to form a larger coalition, when taking into account the overlapping payoffs of the subcoalitions
 Core	Every convex game has a nonempty
 Core	In every convex game, the Shapley value is in the
-	
+	BAYESIAN GAMES
+	Imperfect information	A game where the number of players, the actions available to each player and all the possible payoffs, but not all past actions, are known
+Common prior	In a Bayesian game, the probability distribution of all the possible games at the outset
+Individual private signals	In a Bayesian game, information received by only some players
+Posteriors	In a Bayesian game, the set of beliefs of an agent obtained by conditioning a common prior on individual private signals
+Partitions	In a Bayesian game, for each player, the sets of all possible games whose payoffs are indistinguishable
+Bayesian game	A set of games that differ only in their payoffs, a common prior defined over them, and a partition structure over the games for each agent
+Bayesian game	A set of games, each with the same set of players and that each have the same action set in all games, but with different utility functions
+Type	probability distribution...
+Pure	In a Bayesian game, a strategy that is a simple function of the player's type
+Mixed	In a Bayesian game, a strategy that is a probability distribution over the available actions available to a player of a given type
+Ex-ante	In a Bayesian game, the expected utility where an agent knows nothing about anyone's type
+Interim	In a Bayesian game, the expected utility where an agent knows nothing about other players' types
+ex-post	In a Bayesian game, the expected utility where an agent knows all agents' types
+
+Ex-ante	In a Bayesian game, the expected utility where an agent knows nothing about anyone's type
+
+Interim	In a Bayesian game, the expected utility which is a function of a probability distribution over all possible types, with the probabilities of all possible actions over each type, with the payoff for each action
+Bayesian equilibrium	In a Bayesian game, a mixed strategy profile that maximises expected utility
 
 
-
-
-
-
+In an interim Bayesian game, when a player knows its own strategy, he can eliminate strategies that are strictly dominated
 
 
 
