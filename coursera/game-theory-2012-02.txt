@@ -1,4 +1,4 @@
-WEEK 1	Introduction
+	INTRODUCTION
 Self-Interested agent	Some entity that has preferences and acts on them
 Game	A strategic interaction between self-interested agents
 Player	A self-interested agent that acts in a game
@@ -22,7 +22,8 @@ Pareto optimum	An outcome where for all players there is no other outcome that i
 both defect	In prisoner's dilemma, what is the Nash equilibrium strategy for both players
 both defect	In prisoner's dilemma, what is the only strategy for both players that is not Pareto optimal
 Pure Strategy Nash Equilibrium (PSNE)	Rock-Paper-Scissors does not have a 
-WEEKS 2 and 3	Mixed strategies
+
+	MIXED STRATEGIES
 Pure	A predictable strategy with no random element
 Mixed	A strategy that is a set of pure strategies applied randomly, each with some positive probality
 Nash equilibrium, NE	What every finite game has.
@@ -44,7 +45,8 @@ Minmax	A strategy that minimises the other players' best-case payoff
 Minmax value	The maximum payoff for a player when other players are playing minmax strategies
 Zero-sum	In what sort of game does a mimax strategy make sense
 Correlated equilibrium	An outcome that is arrived at through some form of public signal that exceeds any Nash equilibrium
-WEEK 4	Extensive form
+
+	EXTENSIVE FORM
 Extensive form	Representation of payoffs expressed as a function of player actions, assuming that each player acts sequentially
 Perfect information	Where a player knows everything about the strategies of other players in a game 
 Imperfect information	Where a player does not know everything about the strategies of other players in a game 
@@ -68,7 +70,8 @@ Behavioural	In an extensive-form game, a strategy that assigns at each node a pr
 equal	In a perfect information extensive-form game, the outcome of a mixed and a behavioural strategy are both
 Perfect recall	In an  imperfect information extensive-form game, the outcome of a mixed and a behavioural strategy are both equal in the case where the game has...
 Proper subgames	In an imperfect information extensive-form game, there may not be many...
-WEEK 5	REPEATED GAMES
+
+	REPEATED GAMES
 Repeated game	A game that is played more than once
 Stochastic game	A generalisation of a repeated game where at any point the game may change
 Markov Decision Process, MDP	A single-agent stochastic game with a finite set of states and actions, a set of probabilities of an action leading from one state to another, and a set of expected rewards for each transition
@@ -96,6 +99,7 @@ subsequent	Folk theorem: discounted repeated games. m stands for the minimum los
 sum	Folk theorem: discounted repeated games. The minimum value of beta for a sustainable correlated equilibrium needs to be more than M divided by what function of M and m?
 Tit for tat	A strategy where a player co-operates by default, but then if met with defection will in the next game ignore the other player's action and defect before returning to cooperation
 once	If in a two-player game a player plays tit for tat, this has the effect of making the other player treat it as a game that is repeated
+
 	COALITIONAL GAMES
 Coalitional, cooperative	A game involving groups of agents acting together
 Transferable utility	In a coalitional game, the assumption that payoffs can be redistributed between members of a coalition
@@ -112,8 +116,8 @@ Unique	Given a Grand coalition, the Shapley value for each player is
 N!	Given a coalition of N players, the number of distinct sequences by which the coalition could have formed
 Shapley value	The sum of all the possible marginal contributions to the formation of a coalition that a member could have made divided by the total number of those contributions
 Core	A grand coalition for which the sum of payoffs to the agents is at least as much as they could earn on their own or in another coalition
-Core	A coalition game does not always have a nonempty
-Core	A coalition game does not always have a unique
+Core	A coalitional game does not always have a nonempty
+Core	A coalitional game does not always have a unique
 Simple	A coalitional game where the value of all possible coalitions is either 0 or 1
 Veto player	In a coalitional game, a player where the value of all coalitions that don't involve that player is 0
 Veto player	In a simple coalitional game the core is empty if and only if there is no
@@ -121,29 +125,18 @@ Veto players	In a simple coalitional game, the payoffs in the core are divided e
 Convex	A coalitional game where all possible subcoalitions can obtain a better payoff by combining to form a larger coalition, when taking into account the overlapping payoffs of the subcoalitions
 Core	Every convex game has a nonempty
 Core	In every convex game, the Shapley value is in the
+
 	BAYESIAN GAMES
-	Imperfect information	A game where the number of players, the actions available to each player and all the possible payoffs, but not all past actions, are known
-Common prior	In a Bayesian game, the probability distribution of all the possible games at the outset
-Individual private signals	In a Bayesian game, information received by only some players
-Posteriors	In a Bayesian game, the set of beliefs of an agent obtained by conditioning a common prior on individual private signals
-Partitions	In a Bayesian game, for each player, the sets of all possible games whose payoffs are indistinguishable
-Bayesian game	A set of games that differ only in their payoffs, a common prior defined over them, and a partition structure over the games for each agent
-Bayesian game	A set of games, each with the same set of players and that each have the same action set in all games, but with different utility functions
-Type	probability distribution...
+Bayesian game	A set of possible games, each with the same set of players and the same action sets, but with different utility functions, where one or more of the players does not know which game is being played.
+Common prior	In a Bayesian game, the probability distribution of all possible games
+Type	In a Bayesian game, the actual game that a player is playing
+Private information, private signals	In a Bayesian game, information about a player's type that is not known by all players
+Posterior	In a Bayesian game, the beliefs of an agent based on both a common prior belief and on their own private information
+Equivalence class, partition	In a Bayesian game, a sub-set of all possible games that a particular player considers to be indistinguishable
+Bayesian game	A set of games that differ only in their payoffs, which have a common prior and which are partitioned by each agent into equivalence classes
 Pure	In a Bayesian game, a strategy that is a simple function of the player's type
 Mixed	In a Bayesian game, a strategy that is a probability distribution over the available actions available to a player of a given type
-Ex-ante	In a Bayesian game, the expected utility where an agent knows nothing about anyone's type
+Ex-ante	In a Bayesian game, the expected utility where an agent knows nothing about anyone's type, including his own
 Interim	In a Bayesian game, the expected utility where an agent knows nothing about other players' types
-ex-post	In a Bayesian game, the expected utility where an agent knows all agents' types
-
-Ex-ante	In a Bayesian game, the expected utility where an agent knows nothing about anyone's type
-
-Interim	In a Bayesian game, the expected utility which is a function of a probability distribution over all possible types, with the probabilities of all possible actions over each type, with the payoff for each action
+Ex-post	In a Bayesian game, the expected utility where an agent knows all agents' types
 Bayesian equilibrium	In a Bayesian game, a mixed strategy profile that maximises expected utility
-
-
-In an interim Bayesian game, when a player knows its own strategy, he can eliminate strategies that are strictly dominated
-
-
-
-
