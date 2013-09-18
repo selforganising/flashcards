@@ -1,0 +1,77 @@
+aws cluster
+Pig interactive job flow
+jobTracker
+node
+
+Steps:
+set up an AWS account
+set up an EC2 key pair
+
+Start an AWS cluster
+-Amazon Elastic MapReduce
+-Create New Job Flow
+-Start an Interactive Pig Session
+- Instance type: keep them all small
+- Instance count: keep at 2 for the core, but 1 up to 20 for the Task group
+- Amazon EC2 Key Pair: use the one already set  up
+- Configure your Bootstrap Actions: "Memory Intensive Configuration."
+
+Job flow: Master Public DNS Name
+
+Connect to cluster:
+command line: launch intereactive session
+> ssh -o "ServerAliveInterval 10" -i ~/.ssh/ec2-keypair-001.pem hadoop@<Master Public DNS Name> 
+command line: start big sessions
+> pig
+
+Monitor: jobtracker + dfshealth
+ssh -L 9100:localhost:9100 -L 9101:localhost:9101  -i ~/.ssh/ec2-keypair-001.pem hadoop@<Master Public DNS Name>
+
+Closing down:
+Kill pig session:
+> ctrl-c
+Kill hadoop job
+> hadoop job -kill <jobid> //get the job id from the jobtracker
+
+Check the money!
+Account activity
+
+Back in the interactive session:
+> hadoop dfs -mkdir /user/hadoop
+> hadoop dfs -ls /user/hadoop  // etc.
+
+Alternatively:
+grunt> fs -mkdir /user/hadoop  // etc.
+
+Running a pig job in grunt:
+- paste code straight onto the command line
+
+Checking a running job:
+- go to jobtracker to check the progress of any MapReduce jobs
+
+Copying files:
+From Hadoop filesystem (HDFS) to Master node
+~$ hadoop dfs -copyToLocal /user/hadoop/example-results example-results
+Or, better:
+~$ hadoop fs -getmerge  /user/hadoop/example-results example-results
+From Master node to desktop:
+> scp -o "ServerAliveInterval 10" -i </path/to/saved/keypair/file.pem> hadoop@<master.public-dns-name.amazonaws.com>:<file_path> .
+Or, better:
+scp -o "ServerAliveInterval 10" -i </path/to/saved/keypair/file.pem> -r hadoop@<master.public-dns-name.amazonaws.com>:example-results .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

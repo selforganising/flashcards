@@ -1,0 +1,52 @@
+
+homophily	In a population, the tendency to seek out similar members of the population
+Peer effects	In a population, the tendency to change behaviour  to mimic of those around us
+Individuals	In an agent-based model, a population consists of 
+Behaviours	In an agent-based model, each agent displays 
+Outcomes	In an agent-based model, the interaction of agents produces
+
+
+Schelling	The economist who gave his name to a famous Segregation model
+macrobehaviour	Schelling's model shows that micromotives can lead to unexpected
+Tips, tipping points	Schelling's model provides an explanation for genesis and exodus	
+
+Index of dissimilarity	If you take two groups within a population, and take a measure of the difference in every neighbourhood between the number of one group as a proportion of all members of that group in the population as a whole and the number of the other group as a proportion of all members of that group in the population as a whole and then divide the whole number by 2, this gives a simple
+	
+	
+	
+Granovetter	The sociologist who gave his name to a model that explains collective action
+Lower	According to Granovetter's model, more variation in the thresholds for action in a population makes the threshold for public action
+
+Standing ovation	A model for collective action that takes account of peer effects and information
+
+
+
+Identification
+	
+	
+
+	 who are similar to us is 
+	In a population, the tendency to move to people who are similar to us is 
+
+Peer effects	In the context of populations, regional accents are an example of 
+
+
+racial
+index of dissimilarity
+standing ovation model
+variation in perceptions
+peer effects
+sorting
+agent-based model
+Neighbourhoods	houses
+Behaviours	rules
+Aggregation	what happens
+Agents	people
+Demographics	race and income levels
+collective action
+Identification problem
+Index of dissimilarity
+Schelling's model
+Granovetter's model
+Homophily
+Peer effects

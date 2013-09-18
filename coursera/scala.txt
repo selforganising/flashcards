@@ -1,0 +1,455 @@
+imperative
+functional
+logic
+
+object-oriented	orthogonal to the three different programming paradigms
+
+assignment
+mutable
+Von Neumann	
+Processor
+Memory
+Bus
+Instructions
+Data
+
+Memory cells	Mutable variables
+Load instructions	Variable dereferences
+Store instructions	Variable assignments
+Jumps	control structures
+
+John Bachus	Turing lecture, 1978. Fortran.
+
+Mutations	Not described by mathematical theories
+
+Mutable	Functional programmes avoid variable that are
+Functions	Abstract and compose
+assignment
+imperative control structures
+First-class citizens	Functions
+Lisp	first functional programming language
+
+OSCON Java keynote working hard to keep it simple
+
+Parallel	Execute programs faster
+Concurrent	Manage concurrently
+
+parallel processing plus mutable state
+remove mutability
+
+time	Imperative
+space	functional
+
+deadlocks, race conditions, locks
+
+Collections
+Actors
+Futures
+
+decomposition
+
+closures
+
+_
+.par
+
+message passing
+======================
+
+Primitive expressions
+Combine expressions
+Abstract expressions
+
+REPL	REad-Eveal-Print-Loop
+
+scala, sbt console	Start the Scala REPL
+def	define 
+Primitive types:
+Int
+Double
+Boolean
+
+Return type
+
+Substitution model
+Value	Substitution: reduce an expression to a
+Side effects	Substitution can be applied to all expressions that have no
+
+Call-by-value	exponentially more efficient, works well with imperative programming
+=>	Call-by-name
+x: int
+
+true, false
+!b
+b && b
+b || b
+false	!true
+true	!false
+e	true && e
+false	false && e
+true	true || e
+e	false || e
+short-circuit evaluation
+if-else
+
+val	evaluated at the point of definition
+def
+
+Return type	A recursive definition must have a defined
+
+Nested functions
+block	Delimited by braces { }
+
+tail calls
+tail recursive
+avoid deep recursive chains
+premature optimisation is the root of all evil
+
+
+sbt	Command to start the Scala Build Tool
+project directory	sbt must be started from inside a
+console	Command to open the sbt console
+
+
+
+	Week 2
+Higher-order functions
+First-class values	In Scala, functions are treated as
+Parameter	In Scala, functions can be passed as a
+Result	In Scala, functions can be returned as a
+Higher-order function	A function that takes other functions as parameters or returns other other functions as results is called a
+Currying	The process of simplifying the parameter list of a higher-order functions
+Right	Function types associate to the 
+
+
+	Eclipse
+1. Create a new scala project
+2. New scala object
+2. Create a new Scala application or create an object
+
+Scala worksheet
+
+EBNF	Extended Backhus-Naur form
+alternative	| denotes
+option	[..] denotes
+repetition	{...} denotes
+
+require	to enforce a precondition of the caller of a function, use
+assert	to check the code of the function itself, use
+
+r add s	r.add(s) in infix notation
+r + s	r.+(s) in infix notation
+
+	Highest precedence out of * and +
+	Highest precedence out of - and :
+	Highest precedence out of = and :
+	Highest precedence out of < and !
+	Highest precedence out of > and &
+	Highest precedence out of ^ and &
+	Highest precedence out of | and ^
+	Highest precedence out of | and a
+	Highest precedence out of @ and %
+
+
+	Week 3
+class
+abstract class	can contain members without an implementation
+abstract class	cannot be instatiated
+undefined	members without implementations
+persistent data structures
+override	protects against unintended overriding
+override is optional for methods defined but not implemented in the superclass
+override def
+override def string
+superclass
+subclass
+Object	root class in java.lang
+base classes
+extends
+override
+
+object	Defines a singleton object
+
+superclass
+subclass
+subclasses conform to superclasses
+direct or indirect superclasses of a class are called base classes
+Any user-defined class extends another class
+If no superclass is given the standard class Object is assumed
+
+Object can be used instead of Class defines a singleton object, which will be created the first time it is referenced
+
+Worksheet	
+A Scala application is created with the 
+Object
+
+dynamic method dispatch of methods is analogous to higher-order functions
+Implement objects in terms of higher-order functions?
+Implement higher-order functions in terms of objects?
+
+packages	Classes and objects are organised in 
+fully-qualified	An object placed in a file that begins with a package clause can be called using its
+import p.o	To make a object, o, contained in a package, p, available 
+import p._	To make all objects contained in a package, p, available 
+import p.{o1, o2}	To make objects, o1 and o2, contained in a package, p, available
+scala	The package imported automatically into every Scala program that includes Int and Boolean
+java.lang	The package imported automatically into every Scala program that includes Object
+scala.predef	The package imported automatically into every Scala program that includes require and assert
+Single	Inheritance model shared by Java and Scala
+class c extends s	Declaration of a class c that extends s
+class c extends s with t1 with t2	Declaration of a class c that extends s with traits t1 and t2 
+parameters	traits cannot take 
+Nothing	The type returned on abnormal termination	
+Nothing	The type returned by an empty collection
+throw x	Handling for an exception x
+null	The type compatible with all other types
+AnyVal	The supertype of Int, Boolean and Char
+AnyRef	The supertype of String, List and Iterable
+Any	The supertype of AnyVal and AnyRef
+
+
+immutable lists
+polymorphism
+Nil	The empty list
+Cons	a cell containing an element and the remainder of the list
+val x:	A value parameters, x, is defined in the parameter list as
+[T]	A type parameter, T, is defined like
+val	Evaluated when it is first initialised
+def	Evaluated each time it is referenced
+lazy val	Evaluated when it is first referenced
+inferred	Type parameters can sometimes be 
+Type erasure	The behaviour where type parameters do not affect evaluation in Scala (and Java, Haskell, Ml and OCaml) and can be removed before evaluation
+Polymorphism	The behaviour of a function that can take arguments of many types
+Subtyping	The polymorphic behaviour where subclasses are defined in terms of base class
+Generics	The polymorphic behaviour where types are parameterised with other types
+Format 	⌘⇧F
+
+Lecture 4.1	Functions  as objects
+A => B	The function type that can also be expressed by the class scala.Function1[A, B]
+eta expansion
+object	In an object-oriented language, every value is an
+objects	In an object-oriented language, every operation is a method call on some
+Bounds	The constraints of parameters passed to subtypes
+Variance	The behaviour of parameterised subtypes
+S <: T	S is a subtype of T
+S >: T	S is a supertype of T, or T is a subtype of S
+S >: R <: T, S <: T >: R	S is a subtype of T and a supertype of R
+Covariant	In Scala, arrays are mutable and therefore are not
+Covariant	In Scala, lists are immutable and therefore can be
+class C[+A]	If A is a covariant subtype of B, then the class declaration of A can be written 
+class C[-A]	If A is a contravariant subtype of B, then the class declaration of A can be written 
+class [A]	If A is a nonvariant subtype of B, then the class declaration of A can be written 
+contravariant	In Scala, the argument types of functions are 
+covariant	In Scala, the result types of functions are 
+4.5	Decomposition
+4.6	Pattern Matching
+Factory methods	Add apply function to object
+e match { }
+case p => e	pattern, p, expression, e
+case _ => false	In Scala, the equivalent of "otherwise return false"
+
+
+MatchError
+
+
+Expression problem
+4.7	Lists
+List()	Empty list
+List(1,2,3)	List of integers 1-3
+immutable	The mutability of lists is
+Recursive	Lists are
+List[String]	The type of a list of strings
+List[Int]	The type of a list of integers
+List[List[Int]]	The type of a list of lists of integers
+List[Nothing]	The type of a list of an empty list
+cons	:: stands for 
+1 :: 2 :: Nil	List(1,2) can be written in terms of cons as
+Right	Operators that end in a colon : associate to the 
+1 :: Nil	Nil.::(1) is equivalent to 
+head 	The first element of a list
+tail	The list composed of all the elements of a list except the head
+isEmpty	'true' is a list is empty, 'false' otherwise
+Week 5	Lists
+Lecture 5.1	More Functions on Lists 
+xs.length, xs length	The number of elements of list xs
+xs.last, xs last	The last element of list xs (returns exception if empty)
+xs.init, xs init	A list containing all elements of list xs except the last one (returns exception if empty)
+xs.take n, xs take n	A list consisting of the first n elements of list xs (or xs if xs.length < n)
+xs drop n	A list consisting of the remaining elements of list xs after the first n elements have been taken
+xs(n), xs apply n, xs n???	The element of list xs at index n 
+xs ++ xy	The list consisting of all elements of two lists, xs and xy
+xs.reverse	The list containing the elements of list xs in reverse order
+xs updated(n,x)	The list xs with the element at index n updated to x
+xs indexOf x	The index of the first occurrence of element x in list xs (returns -1 if no such element exists)
+xs contains x	xs indexOf >= 0
+xs concat
+xs ::: ys	Concatenation of two list xs and ys
+
+xs.removeAt
+xs.flatten
+
+Lecture 5.2	Pairs and Tuples 
+(x,y)	The pair x,y
+val (l, v)	The vals l and v, defined in terms of the pair (x, y)
+t._1	The first field of a tuple t, can be accessed with
+t._n	The nth field of a tuple t, can be accessed with
+
+Lecture 5.3	Implicit Parameters
+
+
+Lecture 5.4	Higher-Order List Functions
+xs filter p
+xs filterNot p
+xs partition p
+xs takewhile p
+xs dropwhile p
+xs span p
+
+Lecture 5.5	Reduction of Lists
+(_ * _)	shorthand for ((x, y) => x * y)
+(0 :: xs) reduceLeft (_ + _)	the sum of integers in a list xs, expressed using reduceLeft 
+(1 :: xs) reduceLeft (_ * _)	the product of integers in a list xs, expressed using reduceLeft 
+(xs foldleft 0) (_ + _)	the sum of integers in a list xs, expressed using foldLeft 
+(xs foldleft 1) (_ * _)	the product of integers in a list xs, expressed using foldLeft 
+
+(0 :: xs) reduceRight (_ + _)	the sum of integers in a list xs, expressed using reduceRight
+(1 :: xs) reduceRight (_ * _)	the product of integers in a list xs, expressed using reduceRight 
+(xs foldRight 0) (_ + _)	the sum of integers in a list xs, expressed using foldRight 
+(xs foldRight 1) (_ * _)	the product of integers in a list xs, expressed using foldRight 
+
+It operators are associative and commutative, foldLeft and foldRight are equivalent
+
+
+
+
+Lecture 5.6	Reasoning About Concat 
+
+Lecture 5.7	A Larger Equational Proof on Lists
+	
+	Extras
+sortBy	
+SortWith
+filter(p: (A) => Boolean): List[A]	Select all elements of a list of type A that satisfy a predicate, p
+filterNot(p: (A) => Boolean): List[A]	
+map
+flatmap	
+
+unit	In Scala, a procedure returns a result of type 
+
+Lecture 6.1	Collections
+
+Sequences
+vector	shallow tree, of 32 elements
+	A 2-tier tree of up to 32 * 32 elements  
+log 32 n
+	good random access profile, good for bulk operations (e.g. a map or a fold)
+vector	better for random access
++:	
+:+	
+	
+x +: xs 	Create a new vector with leading element x, followed by all elements of xs
+xs :+ x 	Create a new vector with trailing element x, preceded by all elements of xs
+Vector(1,2,3)	Vector of integers 1-3
+Range	The type that represents a sequence of evenly-spaced integers
+1 until 4	1,2,3 using until
+1 to 3	1,2,3 using to
+1 to 10 by 3	1,4,7,10
+5 to 1 by -2	5,3,1
+Seq	The commmon base class of List, Vector and Range (and Array and String) 
+Iterable	The common base class of Seq, Set and and Map 	
+
+xs exists p	true if there is an element x of xs such that p(x) holds, false otherwise
+xs forall p	true if p(x) holds for all elements x of xs, false otherwise
+xs zip ys	A sequence of pairs drawn from corresponding elements of sequences xs and ys
+xs.unzip	Splits a sequence of pairs xs into two sequences consisting of the ﬁrst, respectively second halves of all pairs
+xs.flatMap f	Applies collection-valued function f to all elements of xs and concatenates the results
+xs.sum	The sum of all elements of this numeric collection
+xs.product	The product of all elements of this numeric collection
+xs.max	The maximum of all elements of this collection (an Ordering must exist)
+xs.min	The minimum of all elements of this collection
+{ case p => e }	x => x match { case p => e } can be abbreviated to 
+for (s) yield e, for { s } yield e	
+p <- e	The form of a generator that uses a pattern p, and an expression e 
+filter
+
+xs flatmap f	(xs map f).flatten is equivalent to 
+taken from	the meaning of <-
+
+
+
+6.3	Sets
+Set(1 to 3)
+	Unordered
+	do not have duplicate elements
+contains	fundamental operation of s set
+6.4	For
+distinct
+6.5	For
+withFilter, flatMap, map	The methods required to be able to use the FOR syntax for any data type
+6.6	Associative maps
+Map	a data structure that is both an iterable and a function
+->	The operator that associates a Map key with a value
+xs(k), xs apply k	The element of Map xs at key k
+
+
+get
+
+trait	A definition of some methods, that can be mixed in to a class
+case class	A kind of class where the constructor parameters are treated as public values and be be accessed directly (which is useful when  pattern matching)
+Option	The trait that has a case class Some and can return Some(x)
+sorted	order a collection using its natural ordering
+SortWith	order a collection using a criterion
+groupBy	Partition a collection into a map of collections according to a discriminator function
+WithDefaultValue	The (very useful) operation that turns a Map into a total function that does not lead to an exception, and allows operatios with Maps to be greatly simplified
+
+	Week 6 Extras
+Identity	The function defined in the Predef object that gives a => a
+_	The wildcard character
+_*	The wildcard pattern at the end of an argument list that matches any remaining elements
+
+Enumerator	Generic term for a generator, which introduces new variables, or a filter, as used say in a sequence comprehension (for loop)
+
+	for comprehensions
+	syntactic sugar for map, flatmap and filter
+	An error on the first line of a for-exression with a type mismatch implies that some sort of a conversion (such as toList) needs to be performed on returned result
+List[Int]	_for (i < List(1,2,3)) yield i_ returns a
+Set[Int]	_for (i < Set(1,2,3)) yield i_ returns a
+Vector[Int]	_for (i < 1 to 3) yield i_ returns a
+The return type of function that uses a for-expression is the (appropriate superset of) the type of the right-hand side of the <- expression and the value yielded at the end of it
+Make sure when return types always match!
+
+7.2	Streams
+Stream.cons	The Stream constructor
+Stream(1, 2)	Stream.cons(1, Stream.cons(2, Stream.empty)) is equivalent to 
+empty	A List that returns nil is equivalent to a Stream that returns 
+x #:: xs	Stream.cons(x, xs) can be written as 
+x #:: xs	The List operation x :: xs is equivalent to the Stream operation
+name	The definition of a stream is similar to a List, except that for a Stream the tail parameter of the cons constructor is called by 
+lazy	The alternative to Stream-like by-name evaluation and List-like strict evaluation, where an evaluation is made when required and then stored for future reference
+first call	The behaviour of def x and lazy val x diverge after the
+7.4
+from(0)	The stream of all natural numbers from 0
+	
+
+Questions:
+
+Q. What does "move change endState" mean in the context of the Water Pouring example?
+A. When you "extend" a "path" with a given "move", you create a new "path" made up of the "move" added to the "history" of the original "path" and a new endState, which you get by doing a "change" on the previous "endState", where "change" is a method of "move". 
+
+Therefore "move change endState" is equivalent to move.change(endState).
+Q. (history foldRight initialState)(_ change _)
+A. take the "history" of a path and successively operate on it ("foldRight") with the "change" method,  starting with its "initialState"--in order to get its endState.
+
+Q. How do a function that returns a function
+
+
+
+
+
+
+	
+	
+
+
+
+

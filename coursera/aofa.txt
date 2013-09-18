@@ -1,0 +1,117 @@
+Analytic combinatorics	A calculus 
+
+Generating functions
+cominatorial construction	Define
+GF equation	Step 2: synbolic transfer theorem
+Coefficiant asymptotics	Step 3: analytuc transfer theorem
+
+
+
+atoms
+operands
+unlabelled
+labelled
+ordinary
+exponential
+combinatorial operators
+ambiguity
+disjoint union	A = B + C
+Cartesian product	A = B x C
+Sequence	A = SEQ(B)
+Empty class
+atom
+binary tree	Empty or a node and two...
+Generating functions T(z) = 
+synthetic variable
+basic transfer theorems
+Binary trees
+Combinatorial class
+Size funtion
+Counting sequenxe
+Construrtion
+Transfer to GF equation
+T = 	T(z)
+
+Generating functions
+
+Simple pole
+Standard scale
+Standard scale (logarithmic)
+
+Integers
+Strings
+Binary trees
+
+Permutations
+Cycles
+Words
+
+Binary
+Terary
+Ordered
+Unary-binary
+Arbitrary restrictions
+Bracketings
+
+Universal laws
+
+Context-free constructions
+Grobner basis elimination
+Drmota-Lalley-Woods theorem
+
+Combinatorial parameters
+oscillatory behaviour
+Saddle-point asympotics
+random structure
+technical conditions
+transformations
+If you can specify it, you can analyse it
+Partitions
+Series-parallel networks
+Surjections
+Components in mappings
+
+Symbolic methods
+Complex asymptotics
+Random structures
+
+
+Analysis of algorithms
+Analytic combinatorics
+
+Quicksort
+Mergesort
+N log N
+	In practice, the faster of Quicksort and Mergesort
+
+
+Big-Oh
+
+Big-O is dangerous, it's just an upper bound on the worst case
+~aNc	tilde notation
+
+galactic algorithm	
+
+Quicksort
+Cost model
+running time
+compares	count
+~aC	If the number of compares is C, then running time is
+
+Binary search	Simple search for the existence of a value within a sorted list of values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

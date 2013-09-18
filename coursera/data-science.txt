@@ -1,0 +1,62 @@
+Statistics
+Null hypothesis
+beta
+p-value
+significance level	0.05
+Reason 1: publication bias
+the truth wears off
+-Basic statistical inference
+-Hypothesis testing
+statistical power
+decline effect
+μ
+- Effect size = mean of experi,ental group - mean of control group / standard deviation
+Robert Coe, 2002
+ES = X1 - X2 / 
+Cohen's heuristic
+Small effect size = 0.2
+Medium 0.5
+Large 0.8
+Confidence interval (of effect size)
+Confidence interval includes 0.0 -> p-value > 0.05
+meta-analysis
+Gene V. Glass 1978
+weighted average
+weight by sample size
+inverse-variance weight
+fixed-effect model
+random-effect model
+-heteroskedasticity
+Reason 2: mistakes and fraud
+Rise of retractions Van Noorden 2011
+Benford's law - tool for fraud detection - Diekmann 2007
+Reason 3: Multiple hypothesis testing
+Familywise Error Rate
+-Bonferroni Correction
+-Sidak correction
+False Discovery Rate
+-Benjamini-Hochberg
+Bradley Efron
+Positive correlation
+Curse of big data - Granville
+Big P vs Big N
+XKCD green jelly beans cause acne
+Frequentist approach
+- repeatable
+- parameters are constant
+Bayesian Approach
+- data are observed
+- parameters are unknown
+
+Matthews 1998
+James Berger
+
+Bayes Theorem
+Prior
+Likelihood
+Marginal
+Posterior
+
+
+
+

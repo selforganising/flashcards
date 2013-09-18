@@ -1,0 +1,20 @@
+ℝ
+ℝⁿ	the set of all ordered n-tuples
+ℝ² = { (x₁, x₂) | x₁, x₂ ∈ ℝ }	the set of all 2-tuples
+
+{ x ∈ ℝ : x > 0 }
+
+Vector 	has a magnitude and direction
+
+A vector in ℝⁿ	an ordered list of n real numbers
+
+scalar multiple
+zero vector
+
+y = mx + c works well in two dimensions, but vector representation works well in any number of dimansions
+
+parametrisation of a line that goes through two points
+vector in standard form starts at the origin
+parametric equation
+
+linear combinations

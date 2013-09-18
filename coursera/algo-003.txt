@@ -1,11 +1,11 @@
 Divide and conquer	General term for an algorithm based on recursively breaking down a problem into two or more sub-problems
 Merge sort, mergesort	The oldest divide and conquer sorting method, discovered by John von Neumann in 1945
-Selection, Insertion, Bubble sort	An example of a simple sorting method
+Selection, Insertion, Bubble	An example of a simple sorting method
 log n	The number of successive halving of subarrays required to reduce an array of length n to n arrays of length 1
 n-1	The maximum number of comparisons required when merging two sorted arrays each of length n/2 into a single array of length n
 (n-1) log n, n log n	Starting with n arrays of length 1, the approximate maximum number of comparisons required when repeatedly merging pairs of sorted arrays into a single sorted array of length n
 n log n	The lower bound on the number of operations required to sort n numbers using merge sort
-n^2, n squared	The lower bound on the number of operations required to sort n numbers using a simple sorting method
+n^2, n squared	The lower bound on the number of operations required to sort n numbers using a simple sorting method 
 2^j	The number of sub-problems, if n numbers are subjected to j recursive sub-divisions	
 O(f(n))	In general, given a function T(n) and some simplified function f(n), then if the highest term of T(n) is ≤ the highest term of f(n), then T(n) is 
 Ω(f(n)), omega(f(n))	In general, given a function T(n) and some simplified function f(n), then if the highest term of T(n) ≥ the highest term of f(n), then T(n) is 

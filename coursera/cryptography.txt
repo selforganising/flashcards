@@ -1,0 +1,156 @@
+Khan Academy
+deterministic
+non-deterministic
+john von neumann
+ENIAC
+random
+pseudo-random
+seed
+seed space
+middle-squares method
+period	length
+
+
+code	A semantic mapping of information from one representation into another
+codebook	A list of mappings required for any kind of code
+cipher	A series of well-defined steps (an algorithm) to turn some information from one syntactic representation into another
+Key	A cipher requires one piece of shared information known as a 
+
+Cryptography
+HTTPS	
+SSL, TLS	
+WPA2
+WEP	Don't use it
+802.11i
+EFS	Files on disk
+TrueCrypt	Files on disk
+CSS	DVD
+AACS	Blu-ray
+
+
+
+Handshake protocol
+
+
+Cryptographic primitives
+
+
+
+
+Handshake protocol	 The method for establishing shared secret key using public-key cryptography
+Record Layer	 The route by which data is transmitted using a shared secret key to ensure conﬁden/ality and integrity
+public	Between public and proprietary ciphers, those that tend to be safer are 
+one time	A key that is used to encrypt one message
+many time	A key that is used to encrypt multiple messages
+
+Digital signature
+Anonymous communication
+Mix net	
+Anonymous digital cash
+Protocols
+Secure multi-party computation
+
+anything	the	can	done	with	trusted	auth.	can	also		
+be	done	without
+
+Privately	outsourcing	computation
+Zero knowledge	You can prove that you have a solution to a problem without showing the result
+threat model	The first step of cryptography is to precisely specify the
+construction	The second step of cryptography is to propose a 
+hard problem	The third step of cryptography is to prove that breaking construction under the threat model will solve an underlying 
+Codebreakers
+
+Symmetric	A cipher which consists of an encryption algorithm that uses a key and a decryption algorithm that uses the same key
+Substitution	A cipher that uses a mapping table to define the encrypted text
+Caesar	A cipher that uses a simple rule to apply a fixed substitution to define the encrypted text
+Key space	The set of all possible permutations that can be used to generate a key in a substitution cipher
+Vigener	A 16th Century cipher that uses a repeating phrase matched up to a message so that a character in the phrase is added to the adjacent character of the message to produce the encrypted message
+56	The Data encryption Standard (DES) introduced in 1974 had a key space of 2 raised to the power
+128	The Advanced Encryption Standard (AES) introduced in 2001 uses keys with a bit length of 
+
+	Discrete probability
+Finite set	Discrete probability is always defined over a
+Event 	Anything to which a probability can be assigned is an
+Weight	The probability of an event is given by its 
+Complement	If an event has a probability p, then 1-p is its
+Random	A variable X:U → V, which takes a value in V and defines a distribution on V is
+Independent	If for two events A and B,  Pr[A and B] = Pr[A] . Pr[B], then A and B are
+
+ 
+
+n	If a finite set U = {0,1}ⁿ, then the number of elements in U is 2 to the power
+1	The probability distribution P over the set U is a function of P: U → [0,1] such that ∑P(x) = 
+Uniform	The probability distribution x∈U: P(x) = 1/|U| is 
+Point distribution	The probability distribution at x₀: P(x₀) = 1, ∀x≠x₀: P(x) = 0 is an example of
+Distribution vector	The vector that gives the probability distribution of a set 
+Event	A subset A of a Universe U is called an
+Randomised algorithm, randomized algorithm	?
+
+XOR	bit-wise addition mod 2 of two strings in {0,1}ⁿ
+Uniform	If X is a uniform variable on {0,1}ⁿ and Y is is an independent random variable on {0,1}ⁿ, then X ⊕ Y is
+24	Birthday paradox: the number of people required for the probability that two of them share the same birthday to be ≥ ½
+1.2	Birthday paradox: if there are n independent uniformly distributed random variables taken from the set U and the probability that two variables share the same value = ½, then n = √|U| x 
+	
+Keys	A cipher is defined over a triple, where the first term is k, the set of all possible  
+Messages	A cipher is defined over a triple, where the second term is m, the set of all possible
+Ciphertexts	A cipher is defined over a triple, where the third term is c, the set of all possible 
+Encryption	A cipher consists of a pair of algorithms, the first of which is used for 
+Decryption	A cipher consists of a pair of algorithms, the second of which is used for
+ciphertexts	The encryption algorithm takes keys and messages and outputs
+Messages	The decryption algorithm takes keys and ciphertexts and outputs
+Correctness	A cipher that returns the original message after both the encryption and decryption steps has the property of
+Random	The encryption algorithm is often
+Deterministic	The decryption algorithm is always
+One Time Pad, OTP	... 
+Shannon	Father of Information Theory
+Perfect secrecy	If for any ciphertext, the probability that it was generated from any two messages is the same, then the encryption algorithm has 
+Perfect secrecy	The One Time Pad has 
+Message	The On Time pad is hard to use because the length of the key has to be at least as long as the length of the 
+
+Pseudorandom
+PRG	Pseudorandom number Generator
+Seed	random
+Stream cipher
+Perfect secrecy	A stream cipher does not have 
+Unpredictability	The minimum property that a PRG must have for security
+Negligible	For a PRG to be unpredictable, the predictability of any bit of a message must be
+30	In practice, the probability of predicting a bit is often considered to be non-negligible if it greater than ½ + ε, where ε = 1 / 2 to the power 
+80	In practice, the probability of predicting a bit is often considered to be negligible if it less than ½ + ε, where ε = 1 / 2 to the power 
+	Linear Congruentual Generator
+non-negligible	The random() function from glibc should never be used for cryptographic purposes, because ε is
+glibc	Version 4 of the Kerberos network authentication protocol uses the random() function from 
+	Attacks on stream ciphers and the one time pad
+Messages	The XOR of two ciphers created using a two-time pad is the same as the XOR of the
+Redundancy	The XOR of two ASCII-encoded messages will allow the messages to be decoded, because ASCII (and English) has sufficient
+Venona	The name of the US project that took advantage of the re-use of one-time pads by the Soviet Union in the early days of the Cold War
+PPTP	The Windows NT-based protocol for communicating between client and server where both client and server used the same key therefore creating a two-time pad insecurity
+WEP	The protocol used for communicating over 802.11b that has several security errors
+Session	With a network, improve security by negotiating a new key for every 
+Stream cipher	With a disk, improve security by just not using a 
+Malleable	A weakness of a one-time pad is that an eavesdropper can modify the ciphertext, in other words it is 
+RC4	A streamcipher designed in 1987 that takes a variable-size seed, is used in HTTPS and (incorrectly) in WEP, and has some weaknesses, including that the first 256 bytes of encrypted output are not entirely unpredictable
+CSS	A badly-broken hardware stream cipher used for encrypting DVDs
+eSTREAM	A modern stream cipher project completed in 2008 
+nonce	A non-repeating value for a given key used by an eSTREAM  cipher
+Once	A key, nonce pair in an eSTREAM cipher is never used more than
+Salsa 20	An unpredictable eSTREAM cipher designed to be easy to implement in both hardware and x86 software that takes a 128-bit or 256-bit seed and a 64-bit nonce
+	PRGs
+	Statistical tests
+10√n	Statistical test: a rough rule of thumb of whether or not a string of binary digits of length n is random is if the difference between the number of 0s and 1s is ≤ 
+n/4	Statistical test: in a random string of binary digits, the number of times that two consecutive 0s occur is approximately
+10∙log₂(n)	Statistical test: In a random string of binary digits, the longest sequence of 0s is expected to be 
+Advantage	For a given statistical test, the difference between the probability of outputs from an input produced by generator and from a series of random numbers
+Negligible	For all efficient statistical tests, the advantage of a "secure" PRG should be 
+unknown	The number of secure PRGs is
+unpredictable	A secure PRG should be 
+secure	if ∀ i ∈ {0,… , n-1} PRG G is unpredictable at position i, then G is 
+Shannon	That "the ciphertext should reveal no information about the plaintext" is a definition due to 
+perfect secrecy	if ∀ m0, m1 ∈ M ( |m0| = |m1| ) { E(k,m0) } ≈ { E(k,m1) } where k⟵K and ≈ denotes indistinguishability, then (E,D) has  
+semantically secure	If for all "efficient" A, Adv[A,E] is "negligible", then E is 
+
+semantically secure	A stream cipher with a secure PRG is 
+defined
+
+
+
+

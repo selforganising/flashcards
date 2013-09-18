@@ -43,7 +43,7 @@ Maxmin	A strategy that maximises the value of a worst-case payoff
 Maxmin value, Safety value	The minimum payoff guaranteed by a maxmin strategy
 Minmax	A strategy that minimises the other players' best-case payoff  
 Minmax value	The maximum payoff for a player when other players are playing minmax strategies
-Zero-sum	In what sort of game does a mimax strategy make sense
+Zero-sum	In what sort of game does a minmax strategy make sense
 Correlated equilibrium	An outcome that is arrived at through some form of public signal that exceeds any Nash equilibrium
 
 	EXTENSIVE FORM
@@ -61,6 +61,7 @@ Induced normal form	Representation of an extensive-form game in normal form
 Pure strategy Nash equilibrium, PSNE	Every perfect information game in extensive form has a...
 Subgame	A game restricted to the descendents of any choice node in an extensive-form game
 Subgame perfect	A Nash equilibrium of an extensive-form game where each of the subgames are themselves Nash equilibria
+Subgame perfect	Every extensive-form game has a Nash equilbirium that is
 Backward induction	In an extensive-form game, a process for finding subgame perfect equilibria
 Pruning	In an extensive-form game, the process by which child nodes are removed in the process of backward induction, because the parent node will never be visited
 Ultimatum bargaining	A simple game where one player makes an offer and the other player can choose to accept or reject it.
@@ -90,14 +91,16 @@ Feasible	A payoff profile that meets the condition that each player's payoff can
 Nash equilibrium	Folk theorem: If a payoff profile is both enforceable and feasible, then it is a
 Stage game	In a repeated game, the game which forms the basis of each repetition
 Grim trigger	In a repeated game, a strategy that begins with cooperation but which when met with defection switches thereafter to defection
-Subgame perfect	In a repeated game, repeatedly playing a given Nash equilibrium of a stage game is always...
+Subgame perfect	In a repeated game, repeatedly playing a given Nash equilibrium of a stage game is always
+Stage game	In a game with a defined number of repetitions, the final game is equivalent to the
+Cooperation	In a repeated game, a player can use different Nash Equilibria as rewards and punishments in order to induce
 Discount factor, Beta	In a repeated game with a correlated equilibrium, the total payoff for cooperation will generally be higher than for defection if there is a sufficiently high...
 Power series, geometric series	In a repeated game, the total discounted payoff for playing the same strategy repeatedly is calculated from the sum of a
 1 - beta	The sum of a simple power series of beta where  0 > beta > 1 is given by the inverse of 
 current	Folk theorem: discounted repeated games. M stands for the maximum gain from deviation (given a correlated equilibrium and at least one Nash equilibrium) in which time period(s)?
 subsequent	Folk theorem: discounted repeated games. m stands for the minimum loss from deviation (given a correlated equilibrium and at least one Nash equilibrium) in which time period(s)?
 sum	Folk theorem: discounted repeated games. The minimum value of beta for a sustainable correlated equilibrium needs to be more than M divided by what function of M and m?
-Tit for tat	A strategy where a player co-operates by default, but then if met with defection will in the next game ignore the other player's action and defect before returning to cooperation
+Tit for tat	A strategy where a player cooperates by default, but then if met with defection will in the next game ignore the other player's action and defect before returning to cooperation
 once	If in a two-player game a player plays tit for tat, this has the effect of making the other player treat it as a game that is repeated
 
 	COALITIONAL GAMES
@@ -127,6 +130,7 @@ Core	Every convex game has a nonempty
 Core	In every convex game, the Shapley value is in the
 
 	BAYESIAN GAMES
+Strategy	In any non-Bayesian game, we can assume that all players know every other players'
 Bayesian game	A set of possible games, each with the same set of players and the same action sets, but with different utility functions, where one or more of the players does not know which game is being played.
 Common prior	In a Bayesian game, the probability distribution of all possible games
 Type	In a Bayesian game, the actual game that a player is playing
