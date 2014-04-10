@@ -1,0 +1,15 @@
+Taken from http://rgruet.free.fr/PQR27/PQR2.7.html - unfinished
+Definition on left - description on right - tab as separator
+
+s[i] = x	 item i of s is replaced by x
+s[i:j [:step]] = t  slice of s from i to j is replaced by t
+del s[i:j[:step]]    same as s[i:j] = []
+s.append(x)	      same as s[len(s) : len(s)] = [x]
+s.extend(x)	       same as s[len(s):len(s)]= x
+s.count(x)	 returns number of i's for which s[i] == x
+s.index(x[, start[, stop]])	 returns smallest i such that s[i]==x. start and stop limit search to only part of the list.
+s.insert(i, x)	 same as s[i:i] = [x] if i>= 0. i == -1 inserts before the last element.
+s.remove(x)  same as del s[s.index(x)]
+s.pop([i])	 same as x = s[i]; del s[i]; return x
+s.reverse()	 reverses the items of s in place
+s.sort([cmp ])	 sorts the items of s in place
