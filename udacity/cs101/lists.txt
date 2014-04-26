@@ -1,15 +1,11 @@
-Taken from http://rgruet.free.fr/PQR27/PQR2.7.html - unfinished
-Definition on left - description on right - tab as separator
-
-s[i] = x	 item i of s is replaced by x
-s[i:j [:step]] = t  slice of s from i to j is replaced by t
-del s[i:j[:step]]    same as s[i:j] = []
-s.append(x)	      same as s[len(s) : len(s)] = [x]
-s.extend(x)	       same as s[len(s):len(s)]= x
-s.count(x)	 returns number of i's for which s[i] == x
-s.index(x[, start[, stop]])	 returns smallest i such that s[i]==x. start and stop limit search to only part of the list.
-s.insert(i, x)	 same as s[i:i] = [x] if i>= 0. i == -1 inserts before the last element.
-s.remove(x)  same as del s[s.index(x)]
-s.pop([i])	 same as x = s[i]; del s[i]; return x
-s.reverse()	 reverses the items of s in place
-s.sort([cmp ])	 sorts the items of s in place
+l[i] = x   Replace the item at position i of list l with  x
+l.append(x)	   Add item x to the end of list l
+l.extend(s)	   Add all the items of list s to the end of list l
+l.insert(i, x)	 Add item x to list l at position i
+l.remove(x) Extract the first item of list l with value x
+l.pop()	 remove and return the last item of list l
+l.pop(i) remove and return the item at position i of list l
+l.index(x)	 The index position of the first occurence of an item with value x in list l
+l.count(x)	 The number of occurences of value x in list l
+l.sort()	 Sort the items of s in place
+l.reverse()	 Reverse the items of s in place
