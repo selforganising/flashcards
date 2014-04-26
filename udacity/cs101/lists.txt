@@ -1,11 +1,16 @@
-s[i] = x	Replace the item at position i of list s with  x
+s[i] = x	Replace the item at position i of list s with value x
 s.append(x)	   Add item x to the end of list s
-s.extend(s)	   Add all the items of list s to the end of list s
+s.extend(t)	   Add all the items of list t to the end of list s
 s.insert(i, x)	 Add item x to list s at position i
-s.remove(x) Extract the first item of list s with value x
-s.pop()	    Remove and return the last item of list s
-s.pop(i)    Remove and return the item at position i of list s
+s.remove(x) 	 Extract the first item of list s with value x
+s.pop()		 Remove and return the last item of list s
+s.pop(i)    	 Remove and return the item at position i of list s
 s.index(x)	 The index position of the first occurence of an item with value x in list s
 s.count(x)	 The number of occurences of value x in list s
 s.sort()	 Sort the items of s in place
 s.reverse()	 Reverse the items of s in place
+del s[i:j]	 remove a slice of a list s between position i and j
+filter(f, s)	 Apply a boolean function f to a sequence s and return those items that are true as a list
+map(f, s) 	 Apply a function f to a sequence s and return the results as a list
+reduce(f, s)	 Apply a binary function f to the first two values of a sequence s and then to the result and to each successive value in turn to produce a single value
+
