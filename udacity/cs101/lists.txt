@@ -1,11 +1,11 @@
-l[i] = x   Replace the item at position i of list l with  x
-l.append(x)	   Add item x to the end of list l
-l.extend(s)	   Add all the items of list s to the end of list l
-l.insert(i, x)	 Add item x to list l at position i
-l.remove(x) Extract the first item of list l with value x
-l.pop()	 remove and return the last item of list l
-l.pop(i) remove and return the item at position i of list l
-l.index(x)	 The index position of the first occurence of an item with value x in list l
-l.count(x)	 The number of occurences of value x in list l
-l.sort()	 Sort the items of s in place
-l.reverse()	 Reverse the items of s in place
+s[i] = x	Replace the item at position i of list s with  x
+s.append(x)	   Add item x to the end of list s
+s.extend(s)	   Add all the items of list s to the end of list s
+s.insert(i, x)	 Add item x to list s at position i
+s.remove(x) Extract the first item of list s with value x
+s.pop()	    Remove and return the last item of list s
+s.pop(i)    Remove and return the item at position i of list s
+s.index(x)	 The index position of the first occurence of an item with value x in list s
+s.count(x)	 The number of occurences of value x in list s
+s.sort()	 Sort the items of s in place
+s.reverse()	 Reverse the items of s in place
