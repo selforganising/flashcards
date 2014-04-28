@@ -1,0 +1,12 @@
+x in s		True if an item of s is equal to x, else False
+x not in s   	False if an item of s is equal to x, else True
+s + t 	 	The concatenation of s and t
+s * n, n * s		n shallow copies of s concatenated
+s[i]   	   		The ith item of s, origin 0
+s[i:j] 			The slice of s from i to j
+s[i:j:k]     The slice of s from i to j with step k
+len(s)	     The length of s
+min(s)	     The smallest item of s
+max(s)	     The largest item of s
+s.index(x)   The index of the first occurrence of x in s
+s.count(x)   The total number of occurrences of x in s
